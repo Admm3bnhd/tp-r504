@@ -10,12 +10,15 @@ public class ClientUDP
 			InetAddress addr = InetAddress.getLocalHost();
 			System.out.println( "adresse =" +addr.getHostName() );
 			
-			String s="Bonjour,Bonsoir Mesdames et Messieurs!";
-			byte[] data = s.getBytes();
+			String msg = "Hello world!";
+			byte[] data = msg.getBytes();
 
 			DatagramPacket packet = new DatagramPacket( data, data.length, addr, 1234 );
 			DatagramSocket sock = new DatagramSocket();
 			sock.send(packet);
+			sock.receive(packet);
+			String str = new String(packet.getData());
+			System.out.println( "str="+str);
 			sock.close();
 		}
 		catch (Exception ex)
