@@ -10,7 +10,7 @@ public class ClientUDP
 			InetAddress addr = InetAddress.getLocalHost();
 			System.out.println( "adresse =" +addr.getHostName() );
 			
-			String s="Hello world!";
+			String s="Bonjour,Bonsoir Mesdames et Messieurs!";
 			byte[] data = s.getBytes();
 
 			DatagramPacket packet = new DatagramPacket( data, data.length, addr, 1234 );
