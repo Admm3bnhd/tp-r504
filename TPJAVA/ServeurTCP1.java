@@ -1,5 +1,5 @@
-import java.net.*
-import java.io.*
+import java.net.*;
+import java.io.*;
 
 public class ServeurTCP1
 {
@@ -17,7 +17,7 @@ public class ServeurTCP1
 	}
 	catch(Exception ex)
 	{
-		System.out.println("erreur !"):;
+		System.out.println("erreur !");
 		ex.printStackTrace();
 	}
 	}
