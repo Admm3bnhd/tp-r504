@@ -1,10 +1,10 @@
+//ClientTCP3.java
 import java.net.*;
 import java.io.*;
 
 public class ClientTCP3
 {
 	public static void main(String[] args)
-	//ClientTCP3.java
 	{
 		try
 		{

@@ -1,3 +1,4 @@
+//ClientTCP2.java
 import java.net.*;
 import java.io.*;
 
@@ -5,7 +6,6 @@ public class ClientTCP2
 {
 	public static void main(String[] args)
 	{
-	//ClientTCP1.java
 	try
 	{
 		Socket socket = new Socket("localhost",2016);
